@@ -23,7 +23,7 @@ steps:
     run: corepack enable
 
   - name: Install dependencies
-    run: yarn install --immutable
+    run: yarn install --no-immutable
 
   - name: Build library
     run: yarn build
