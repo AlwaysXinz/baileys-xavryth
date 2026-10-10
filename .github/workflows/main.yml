@@ -1,29 +1,29 @@
 name: Build Xavryth Baileys
 
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - master
+workflow_dispatch:
+push:
+branches:
+- master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+build:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
+steps:
+  - name: Checkout source
+    uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
+  - name: Setup Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: 22
 
-      - name: Enable Corepack
-        run: corepack enable
+  - name: Enable Corepack
+    run: corepack enable
 
-      - name: Install dependencies
-        run: yarn install
+  - name: Install dependencies
+    run: yarn install --immutable
 
-      - name: Build library
-        run: yarn build
+  - name: Build library
+    run: yarn build
