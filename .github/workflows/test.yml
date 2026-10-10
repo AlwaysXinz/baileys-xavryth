@@ -35,7 +35,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: yarn install --no-immutable
 
       - name: Run tests
         run: yarn test
