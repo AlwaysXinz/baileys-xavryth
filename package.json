@@ -7,9 +7,11 @@
     "whatsapp",
     "automation"
   ],
-  "homepage": "https://github.com/WhiskeySockets/Baileys/",
+  "homepage": "https://github.com/AlwaysXinz/baileys-xavryth",
   "repository": {
-    "url": "git@github.com:WhiskeySockets/Baileys.git"
+  "type": "git",
+  "url": "https://github.com/AlwaysXinz/baileys-xavryth.git"
+},
   },
   "license": "MIT",
   "author": "Rajeh Taher",
